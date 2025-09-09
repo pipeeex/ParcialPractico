@@ -100,7 +100,7 @@ function generateChart() {
                 legend: { display: true, labels: { color: textColor } },
                 tooltip: { enabled: true }
             },
-            scales: (chartType === 'pie' || chartType === 'doughnut' || chartType === 'radar') ? {} : {
+            scales: (chartType === 'pie' || chartType === 'radar') ? {} : {
                 x: {
                     ticks: { color: textColor },
                     grid: { color: gridColor }
