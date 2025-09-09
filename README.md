@@ -61,10 +61,10 @@ Este proyecto es una **aplicación web de una sola página (SPA)** que funciona 
 ## Ejemplo de CSV para prueba
 
 ```csv
-Vendedor,Ventas,Región
-Ana,1200,Norte
-Luis,950,Sur
-Carlos,1800,Centro
-María,1500,Norte
-José,700,Sur
-Laura,1100,Centr
+Vendedor,Ventas
+Ana,1200
+Luis,950
+Carlos,1800
+María,1500
+José,700
+Laura,1100
