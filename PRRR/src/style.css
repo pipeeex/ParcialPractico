@@ -154,3 +154,15 @@ canvas {
     flex-direction: column;
   }
 }
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
