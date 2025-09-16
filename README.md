@@ -1,12 +1,13 @@
 # Mini Herramienta BI - SPA con HTML, CSS y JS
 
-## Descripción
+## 📌 Descripción
 
-Este proyecto es una **aplicación web de una sola página (SPA)** que funciona como una mini herramienta básica de **Inteligencia de Negocios (BI)** similar a funciones básicas de Excel. Permite al usuario cargar datos en formato CSV (copiar/pegar o importar archivo) y visualizar esos datos de manera estructurada y visual a través de tablas interactivas y gráficos configurables.
+Este proyecto es una **aplicación web de una sola página (SPA)** que funciona como una mini herramienta básica de **Inteligencia de Negocios (BI)** similar a funciones básicas de Excel.  
+Permite al usuario cargar datos en formato CSV (copiar/pegar o importar archivo) y visualizar esos datos de manera estructurada y visual a través de tablas interactivas, gráficos configurables y un panel de estadísticas clave en tiempo real.
 
 ---
 
-## Funcionalidades principales
+## ✨ Funcionalidades principales
 
 - **Ingreso de datos CSV**:
   - Pegar texto CSV directamente en un área de texto.
@@ -24,6 +25,17 @@ Este proyecto es una **aplicación web de una sola página (SPA)** que funciona 
   - Visualización responsive y con contraste adecuado para modo claro y oscuro.
   - Exportación de la gráfica generada como imagen PNG.
 
+- **📊 Panel de estadísticas en tiempo real (KPI)**:
+  - Métricas automáticas calculadas sobre la columna seleccionada como eje Y:
+    - Total de registros  
+    - Suma  
+    - Promedio  
+    - Mínimo  
+    - Máximo  
+  - Se actualiza automáticamente al **pegar, editar o importar un CSV**, sin necesidad de presionar botones.
+  - Diseño responsive y adaptado al **modo claro/oscuro**.
+  - Compatible con accesibilidad gracias a `aria-live="polite"` (los lectores de pantalla anuncian los cambios de métricas).
+
 - **Modo oscuro**:
   - Interfaz que cambia entre modo claro y oscuro con estilos personalizados y colores adaptativos para legibilidad.
   - El gráfico cambia colores para ser visible en ambos modos.
@@ -34,31 +46,32 @@ Este proyecto es una **aplicación web de una sola página (SPA)** que funciona 
 
 ---
 
-## Tecnologías usadas
+## 🛠️ Tecnologías usadas
 
 - HTML5, CSS3 (variables CSS para temas y responsive design)
 - JavaScript (ES6+)
 - [Chart.js](https://www.chartjs.org/) para visualización gráfica
-- No se requiere backend ni frameworks externos — todo funciona en el navegador.
+- **Sin backend** ni frameworks externos — todo funciona en el navegador.
 
 ---
 
-## Cómo usar la aplicación
+## 🚀 Cómo usar la aplicación
 
-1. **Pegar o importar CSV**: Copia datos CSV y pégalos en el área de texto o usa el botón para importar archivo.
-2. **Ver tabla**: Los datos se muestran organizados en una tabla debajo del área de entrada.
-3. **Configurar gráfica**:
-   - Selecciona la columna para el eje X (categorías).
-   - Selecciona la columna para el eje Y (valores numéricos).
-   - Elige el tipo de gráfico (barras, líneas, radar, torta, dona).
-   - Selecciona orientación (solo para barras).
-   - El gráfico se genera automáticamente.
-4. **Modo oscuro**: Usa el botón en la esquina para alternar entre modo claro y oscuro.
-5. **Exportar imagen**: Haz clic en el botón para exportar el gráfico generado como archivo PNG.
+1. **Pegar o importar CSV**: Copia datos CSV y pégalos en el área de texto o usa el botón para importar archivo.  
+2. **Ver tabla**: Los datos se muestran organizados en una tabla debajo del área de entrada.  
+3. **Consultar estadísticas en tiempo real**: Justo debajo de los controles se muestran métricas clave que se recalculan automáticamente a medida que los datos cambian.  
+4. **Configurar gráfica**:
+   - Selecciona la columna para el eje X (categorías).  
+   - Selecciona la columna para el eje Y (valores numéricos).  
+   - Elige el tipo de gráfico (barras, líneas, radar, torta, dona).  
+   - Selecciona orientación (solo para barras).  
+   - El gráfico se actualiza automáticamente en tiempo real.  
+5. **Modo oscuro**: Usa el botón en la esquina para alternar entre modo claro y oscuro.  
+6. **Exportar imagen**: Haz clic en el botón para exportar el gráfico generado como archivo PNG.  
 
 ---
 
-## Ejemplo de CSV para prueba
+## 📂 Ejemplo de CSV para prueba
 
 ```csv
 Vendedor,Ventas
